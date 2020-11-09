@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;1,200&display=swap" rel="stylesheet"> 
+    <title>Feedback Form</title>
+</head>
+<body>
+    <main id="main">
+        <section id="title">
+            <h1>Final Year Classes Feedback Form</h1>
+        </section>
+        <p id="description">Thank you for taking the time to help us improve the services </p>
+        <form action="" id="survey-form">
+
+        <label for="Name">Name</label><br>
+        <input type="text" id="name-label" name="Name" placeholder="Enter your name here" required><br><br>
+
+        <label for="Email">Email</label><br>
+        <input type="email" name="Email" id="email-label" placeholder="Enter your email here" required><br><br>
+
+        <label for="ContactNumber">Contact Number</label><br>
+        <input type="text" name="ContactNumber" id="number-label" maxlength="10" placeholder="Enter your contact number here" re><br><br>
+
+        <label for="Branch">What is your specialization field ?</label><br>
+        <select name="branch" id="dropdown" required>
+            <option value="1">Computer Science</option>
+            <option value="2">Information Technology</option>
+        </select><br><br>
+
+        <label for="ClassRating">Would you like more job specific workshops in college ?</label><br>
+        <section id="radiochoices">
+            <input type="radio" name="therapy" id="yes" value="no">
+        <label for="Yes">Yes</label><br>
+        <input type="radio" name="therapy" id="no" value="no">
+        <label for="No">No</label>
+        </section>
+        <br><br>
+
+        <label for="SuggestionTopics">Which of the following topics would you require more workshops?</label><br>
+        <section id=choicecheckbox>
+            <input type="checkbox" name="frontenddev" id="frontenddev">
+            <label for="frontenddev">Front End Dev Starters</label><br>
+            <input type="checkbox" name="react" id="react">
+            <label for="frontenddev">React</label><br>
+            <input type="checkbox" name="vue" id="vue">
+            <label for="frontenddev">Vue</label><br>
+            <input type="checkbox" name="angular" id="angular">
+            <label for="frontenddev">Angular</label><br>
+            <input type="checkbox" name="prototyping" id="prototyping">
+            <label for="frontenddev">UI/UX Prototyping</label><br>
+        </section>
+        <br>
+
+        <label for="suggestions">Any more suggestions?</label><br>
+        <textarea name="suggestions" id="suggestions" cols="30" rows="10" placeholder="Please enter your suggestions here"></textarea>
+        <br><br>
+
+        <input type="submit" value="Submit" id="submit">
+    </form>
+
+    </main>
+</body>
+</html>
